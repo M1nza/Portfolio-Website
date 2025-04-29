@@ -1,118 +1,94 @@
-body{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin: 0;
-  }
-.body_section{
-    padding : 3% 5% 1%;
+/* Global body and styling */
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-  @font-face{
-    font-family: "Lovely Home";
-    src:local('Lovely Home'), 
-    url("Image/LovelyHome-9aBZ.ttf") format('truetype');
-
-  }
-
-.brand-name ,.navbar-light .navbar-brand{
-      /* font-family: "Brush Script MT"; */
-      /* margin-bottom: 3px; */
-      font-family: "Lovely Home";
-      font-size: 50px;
-      font-weight: bold;
-      color: #351458;
-  }
-  @media only screen and (max-width : 764px){
-      .brand-name ,.navbar-light .navbar-brand{
-      font-family: "Lovely Home";
-      font-size: 40px;
-      font-weight: bold;
-      color: #351458;
-  }
+/* Navbar styling */
+.navbar-nav .nav-link.headerachor {
+  color: #b0b0b0;
+  font-size: 18px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
 }
-  .headerachor {
-    color: black;
-    margin: 0 7px 0 7px;
-    font-size: 25px;
+
+.navbar-nav .nav-link.headerachor:hover {
+  color: #58a6ff;
+  background-color: transparent;
+  border-bottom: 2px solid #58a6ff;
+}
+
+/* Section padding */
+.Section1 {
+  padding: 40px 20px;
+}
+
+/* Project heading styling */
+.project-heading .P-heading {
+  font-size: 32px;
+  font-weight: 800;
+  color: #58a6ff;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+/* Card styling */
+.boxx  {
+  background-color: #161b22;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 15px 0;
+  height: 300px; /* Set a fixed height for the cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align items evenly inside the card */
+}
+
+.boxx:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
+}
+
+/* Title and text inside the card */
+.card-title {
+  color: #58a6ff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #c9d1d9;
+  flex-grow: 1; /* Ensure text section grows and fills space within the card */
+}
+
+/* Project text styling */
+.project-text {
+  color: #c9d1d9;
+  font-size: 15px;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .project-heading .P-heading {
+    font-size: 24px;
   }
 
-  .headerachor:hover {
-    background-color: #f1f1f1;
-  }
-
-  .projectimage{
-      width:100%;
-      height:100%;
-  }
-
-  .Section1{
-    padding: 5% 0 3%;
-  }
-
-  .project-heading{
-    margin: auto;
-    width: 60%;
-    padding: 10px;
-    text-align: center;
-  }
-  .P-heading{
-    padding-bottom: 10px;
-    font-size : 40px;
-  }
-
-  .p-text{
+  .card-title {
     font-size: 18px;
-    color:#868e96;
   }
 
-  .Project-box{
-    color:black;
-    text-decoration: none;
+  .card-text {
+    font-size: 13px;
   }
 
-  .col-sm-6{
-    padding-bottom: 20px;
-  }
-
-
+  /* Ensure cards stack neatly on smaller screens */
   .boxx {
-    background-color: #fff;
-    border-color: white;
-    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.356);
+    height: 280px; /* Adjust height for smaller screens */
   }
-  .boxx:hover{
-    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.952);
-  }
-
-
-  .Project-box:hover{
-    color: black;
-    text-decoration: none;
-  }
-
- .iconify{
-   width:40px;
-   height: 40px;
-   float: right;
- }
-
- .project-text{
-   color :#868e96;
-   font-family: "Montserrat";
-   font-weight: 300;
- }
-
- 
- @media only screen and (max-width : 764px){
-   .project-heading{
-     width: 100%;
-   }
- 
 }
-
-
-  footer{
-    padding-top: 2%;
-    color: #868e96;
-    text-align: center;
-  }
