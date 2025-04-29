@@ -1,328 +1,148 @@
+/* Dark Theme Neon Classy Portfolio Style for Minza Sadiq */
 
-body{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-  }
-.body_section{
-    padding : 3% 5% 1%;
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #0f1117;
+  color: #e0e0e0;
 }
 
-p{
+/* Navigation bar styles */
+.navbar-nav .nav-link.headerachor {
+  color: #b0b0b0;
   font-size: 18px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
 }
 
-  a{
-    text-decoration: none;
-  }
-
-  @font-face{
-    font-family: "Lovely Home";
-    src:local('Lovely Home'), 
-    url("Image/LovelyHome-9aBZ.ttf") format('truetype');
-
-  }
-
-.brand-name ,.navbar-light .navbar-brand{
-      /* font-family: "Brush Script MT"; */
-      /* margin-bottom: 3px; */
-      font-family: "Lovely Home";
-      font-size: 50px;
-      font-weight: bold;
-      color: #351458;
-  }
-
-
-
-  .headerachor {
-    color: black;
-    margin: 0 7px 0 7px;
-    font-size: 25px;
-  }
-
-  .headerachor:hover {
-    background-color: #f1f1f1;
-  }
-
-  /* Section 1 */
-   .column1{
-       background-image: linear-gradient(#fefcfe,#ffffff);
-       padding : 8px 16px;
-   }
-
-  .section-1{
-    margin-top: 6%;
-    text-align: left;
-    position: relative;
-}
-span.wave {
-  animation-name: wave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
+.navbar-nav .nav-link.headerachor:hover {
+  color: #58a6ff;
+  background-color: transparent;
+  border-bottom: 2px solid #58a6ff;
 }
 
-@keyframes wave-animation {
-    0% { transform: rotate(  0.0deg) }
-   10% { transform: rotate(-10.0deg) }
-   20% { transform: rotate( 12.0deg) }
-   30% { transform: rotate(-10.0deg) }
-   40% { transform: rotate(  9.0deg) }
-   50% { transform: rotate(  0.0deg) }
-  100% { transform: rotate(  0.0deg) }
-}
-
-.first-image{
-    position: absolute;
-    right:0;
-}
-.boyimage{
-  height: 400px;
-}
-
-@media only screen and (max-width : 1183px){
-  .first-image{
-    right:160px;
-  }
-
-}
-.boy{
-  width: 100%;
-  height: 100%;
-  animation: bounce 1.2s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-}
-
-@keyframes bounce{
-  from{
-      transform: translate3d(0,0,0);
-  }
-  to{
-      transform: translate3d(0,20px,0);
-  }
-}
-
-.Image-boy{
-  text-align: center;
+.main-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
-}
-
-@media only screen and (min-width:951px){
-  .Image-boy{
-    display:none;
-  }
-}
-  .Hello{
-      margin-bottom: 20px;
-  }
-  p{
-      line-height: 2;
-      color: #868e96;
-  }
-
-
-  .btn {
-    display: inline-block;
-    width: 4.37rem;
-    height: 4.37rem;
-    background: #e9e9e9;
-    padding: 0px 0px;
-    margin: 10px;
-    border-radius: 30%;
-    box-shadow: 0 5px 15px -5px #00000070;
-    color: #3498db;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .btn i {
-    line-height: 70px;
-    font-size: 1.625rem;
-    transition: 0.2s linear;
-  }
-
-  .btn:hover i {
-    transform: scale(1.3);
-    color: #f1f1f1;
-  }
-
-  .btn::before {
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    background: #3498db;
-    transform: rotate(45deg);
-    left: -110%;
-    top: 90%;
-  }
-
-
-
-
-  .btn:hover::before {
-    animation: aaa 0.7s 1;
-    top: -10%;
-    left: -10%;
-  }
-
-  @media only screen and (max-width:470px){
-    .btn{
-      width: 2.5rem;
-      height: 2.5rem;
-      margin: 7px;
-    }
-    .btn i {
-      line-height: 40px;
-      font-size: 1em;
-    }
-  }
-
- #Whatido{
-     text-align: center;
-     padding-top: 7%;
- }
-
-  /* Section 2 */
-  .feature-1{
-      padding-top: 5%;
-      text-align: center;
-      }
-  .feature-2{
-    padding-top: 5%;
-    text-align: center;
-}
-  .feature-3{
-  padding-top: 5%;
-  padding-bottom: 20px;
+  min-height: 80vh; /* Adjusting height to bring content up */
+  padding: 20px;
   text-align: center;
+}
+
+.section-1 {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+  margin-top: 30px; /* Reducing space between header and content */
+}
+
+h1.Hello {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #58a6ff;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #eff1f4;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #1f2127;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  color: #58a6ff;
+  text-align: center;
+  line-height: 3.5rem;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.btn i {
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  background: #58a6ff;
+  color: #0f1117;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+/* Animate all icons together */
+.btn:nth-child(1) {
+  animation-delay: 1.2s;
+}
+.btn:nth-child(2) {
+  animation-delay: 1.2s;
+}
+.btn:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
-  .Feature-Heading{
-      font-family: "Montserrat";
-      font-weight: 300;
-  }
+/* Horizontal line */
+.line {
+  border: none;
+  height: 1px;
+  background-color: #58a6ff;
+  margin: 40px auto;
+  width: 80%;
+}
 
-  .Feature-first-image{
-      padding : 0 2% 10%;
-  }
-
-  .Feature-second-image{
-      padding : 5% 2% 0;
-  }
-
-
-
-
-
-  .Feature-svg-image{
-      width: 100%;
-      height:100%;
-  }
-  .Feature-svg-image-3{
-    width: 84%;
-    height: 84%;
-  }
-
-
-
-
-  .dev-icon{
-      list-style: none;
-      display: inline;
-      padding: 0%;
-  }
-
-
-  .numpy{
-    max-width: 100%;
-    width : 30%;
-    height: 30%;
-    padding-bottom: 7%;
-  }
-
-  .pandas{
-    max-width: 100%;
-    max-height: 100%;
-    width : 23%;
-    height: 15%;
-    padding-bottom: 7%;
-    padding-left :0;
-  }
-
-  li{
-    display: inline;
-  }
-
-  .Data-Analytic{
-      text-align: left;
-  }
-
-  .Features-paragraph{
-      margin-top : 8px;
-      margin-bottom: 8px;
-  }
-
-  @media only screen and (max-width : 764px){
-    .feature-2{
-      display: flex;
-      flex-direction: column;
-    }
-    .feature-web{
-      order:2;
-    }
-      
-      .brand-name ,.navbar-light .navbar-brand{
-      /* font-family: "Brush Script MT"; */
-      /* margin-bottom: 3px; */
-      font-family: "Lovely Home";
-      font-size: 40px;
-      font-weight: bold;
-      color: #351458;
-  }
-  }
-  @media only screen and (max-width : 991px) and (min-width: 951px){
-    .section-1{
-      margin-top: auto;
-      padding-right: 400px;
-    }
-  }
-  @media only screen and (max-width : 950px){
-
-    body,html{
-      text-align: center;
-      font-size: 16px;
-      line-height: normal;
-    }
-    .Hello{
-      margin-bottom: 10px;
-    }
-    h1{
-      font-size: 25px;
-    }
-    p{
-      font-size: 15px;
-      line-height: normal;
-    }
-      .section-1{
-          text-align: center;
-      }
-      .first-image{
-          display: none;
-      }
-
-      .pandas{
-        width: 23%;
-        height: 15%;
-      }
-  }
-
-
-
-
-footer{
-  padding-top: 2%;
+/* Footer styles */
+footer {
+  text-align: center;
   color: #868e96;
-  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1.5s;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  h1.Hello {
+    font-size: 28px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .btn {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+  }
+  .btn i {
+    font-size: 1.2rem;
+  }
 }
